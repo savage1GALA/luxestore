@@ -1,8 +1,21 @@
 @echo off
+title Luxe Store
+color 0A
+cls
+
+echo.
 echo ========================================
-echo   Starting Luxe Store Application
+echo       STARTING LUXE STORE
 echo ========================================
 echo.
+echo Starting all servers...
+echo   - Server: http://localhost:5000
+echo   - Client: http://localhost:3000  
+echo   - Admin:  http://localhost:3001
+echo.
+echo Press Ctrl+C in each window to stop servers.
+echo.
+timeout /t 2 >nul
 
 REM Check if Node.js is installed
 where node >nul 2>nul
@@ -45,10 +58,18 @@ timeout /t 3 /nobreak >nul
 echo [3/3] Starting admin panel on port 3001...
 start "Luxe Store Admin" cmd /k "cd /d %~dp0admin-app && npm run dev"
 
+REM Wait a bit for admin to start
+timeout /t 3 /nobreak >nul
+
 echo.
 echo ========================================
-echo   All servers are starting!
+echo   All Servers Started!
 echo ========================================
+echo.
+echo --- Local Access ---
+echo Server: http://localhost:5000
+echo Client: http://localhost:3000
+echo Admin:  http://localhost:3001
 echo.
 
 REM Get local IP address for network access
@@ -59,25 +80,19 @@ for /f "tokens=2 delims=:" %%a in ('ipconfig ^| findstr /i "IPv4"') do (
 :found_ip
 set LOCAL_IP=%LOCAL_IP:~1%
 
-echo --- Local Access ---
-echo Server: http://localhost:5000
-echo Client: http://localhost:3000
-echo Admin:  http://localhost:3001
-echo.
-echo --- Mobile/Network Access ---
-echo Server: http://%LOCAL_IP%:5000
+echo --- Network Access (Same Wi-Fi) ---
 echo Client: http://%LOCAL_IP%:3000
+echo Server: http://%LOCAL_IP%:5000
 echo Admin:  http://%LOCAL_IP%:3001
 echo.
-echo To access from your mobile device:
-echo 1. Make sure your phone is on the same Wi-Fi network
-echo 2. Use the IP addresses shown above (http://%LOCAL_IP%:3000)
-echo 3. The server window will also show the network IP address
+echo To access from mobile: Connect to same Wi-Fi and use the network IP above.
 echo.
-echo NOTE: If you see "EADDRINUSE" errors, close the
-echo server windows and run this script again.
+echo ========================================
+echo.
+echo Opening browser...
+timeout /t 2 >nul
+start http://localhost:3000
 echo.
 echo Press any key to close this window...
 echo (The servers will continue running in separate windows)
 pause >nul
-

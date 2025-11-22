@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useMemo, useState } from 'react'
-import axios from 'axios'
+import apiClient from '../config/axios'
 import { getImageURL } from '../config/api'
 
 // Update this list to add more cities or adjust their shipping fees.
@@ -70,7 +70,7 @@ export default function Cart() {
         date: new Date().toISOString(),
       }
 
-      await axios.post('/api/orders', order)
+      await apiClient.post('/api/orders', order)
       setLastOrderSummary({
         itemsTotal,
         shippingTax: shippingTotal,

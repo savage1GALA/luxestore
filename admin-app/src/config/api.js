@@ -29,6 +29,11 @@ const getAPIBaseURL = () => {
 
 export const API_BASE_URL = getAPIBaseURL()
 
+// Debug log (only in browser console, will be removed in production)
+if (typeof window !== 'undefined') {
+  console.log('API Base URL:', API_BASE_URL || 'Using relative URLs')
+}
+
 // Helper function to get image URL
 export const getImageURL = (imagePath) => {
   if (!imagePath) return null

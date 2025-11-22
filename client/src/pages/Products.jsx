@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useCart } from '../context/CartContext'
-import axios from 'axios'
+import apiClient from '../config/axios'
 import { getImageURL } from '../config/api'
 
 export default function Products() {
@@ -14,7 +14,7 @@ export default function Products() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('/api/products')
+      const response = await apiClient.get('/api/products')
       setProducts(response.data)
     } catch (error) {
       console.error('Error fetching products:', error)

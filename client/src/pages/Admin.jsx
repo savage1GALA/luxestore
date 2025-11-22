@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import apiClient from '../config/axios'
 
 export default function Admin() {
   const [orders, setOrders] = useState([])
@@ -13,7 +13,7 @@ export default function Admin() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('/api/orders')
+      const response = await apiClient.get('/api/orders')
       setOrders(response.data.reverse()) // Show newest first
     } catch (error) {
       console.error('Error fetching orders:', error)
