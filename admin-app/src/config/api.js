@@ -3,9 +3,13 @@
 
 // Get the current hostname (works on both localhost, network IP, and public URLs)
 const getAPIBaseURL = () => {
+  let url = ''
+  
   // If VITE_API_URL is explicitly set (even in dev), use it (for connecting to deployed backend)
   if (import.meta.env.VITE_API_URL) {
-    return import.meta.env.VITE_API_URL
+    url = import.meta.env.VITE_API_URL.trim()
+    // Remove trailing slash if present
+    return url.endsWith('/') ? url.slice(0, -1) : url
   }
   
   // In development, use relative URLs when possible (proxied by Vite)

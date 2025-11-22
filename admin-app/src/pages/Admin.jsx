@@ -16,7 +16,8 @@ export default function Admin() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get(`${API_BASE_URL || ''}/api/orders`)
+      const url = API_BASE_URL ? `${API_BASE_URL}/api/orders` : '/api/orders'
+      const response = await axios.get(url)
       // Ensure all orders have a status (default to 'waiting' for old orders)
       const ordersWithStatus = response.data.map(order => ({
         ...order,
@@ -33,7 +34,8 @@ export default function Admin() {
   const markOrderAsDone = async (orderId) => {
     try {
       console.log('Marking order as done, orderId:', orderId)
-      const response = await axios.patch(`${API_BASE_URL || ''}/api/orders/${orderId}`, { status: 'done' })
+      const url = API_BASE_URL ? `${API_BASE_URL}/api/orders/${orderId}` : `/api/orders/${orderId}`
+      const response = await axios.patch(url, { status: 'done' })
       console.log('Order updated successfully:', response.data)
       fetchOrders() // Refresh orders
     } catch (error) {
@@ -47,7 +49,8 @@ export default function Admin() {
   const markOrderAsWaiting = async (orderId) => {
     try {
       console.log('Marking order as waiting, orderId:', orderId)
-      const response = await axios.patch(`${API_BASE_URL || ''}/api/orders/${orderId}`, { status: 'waiting' })
+      const url = API_BASE_URL ? `${API_BASE_URL}/api/orders/${orderId}` : `/api/orders/${orderId}`
+      const response = await axios.patch(url, { status: 'waiting' })
       console.log('Order updated successfully:', response.data)
       fetchOrders() // Refresh orders
     } catch (error) {
@@ -62,7 +65,8 @@ export default function Admin() {
     const confirmed = window.confirm(`Delete order #${orderId}? This action cannot be undone.`)
     if (!confirmed) return
     try {
-      await axios.delete(`${API_BASE_URL || ''}/api/orders/${orderId}`)
+      const url = API_BASE_URL ? `${API_BASE_URL}/api/orders/${orderId}` : `/api/orders/${orderId}`
+      await axios.delete(url)
       fetchOrders()
     } catch (error) {
       console.error('Error deleting order:', error)

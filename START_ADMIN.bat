@@ -33,11 +33,8 @@ echo.
 echo Starting admin panel...
 echo.
 
-REM Set environment variable to connect to Railway backend
-set VITE_API_URL=https://luxestore-production.up.railway.app
-
-REM Start admin panel with Railway backend URL
-start "Luxe Store Admin" cmd /k "cd /d %~dp0admin-app && set VITE_API_URL=https://luxestore-production.up.railway.app && npm run dev"
+REM Start admin panel with Railway backend URL (set in the command window)
+start "Luxe Store Admin" cmd /k "cd /d %~dp0admin-app && set VITE_API_URL=https://luxestore-production.up.railway.app&& npm run dev"
 
 REM Wait a bit for admin to start
 timeout /t 3 /nobreak >nul
