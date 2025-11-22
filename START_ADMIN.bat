@@ -33,8 +33,11 @@ echo.
 echo Starting admin panel...
 echo.
 
-REM Start admin panel
-start "Luxe Store Admin" cmd /k "cd /d %~dp0admin-app && npm run dev"
+REM Set environment variable to connect to Railway backend
+set VITE_API_URL=https://luxestore-production.up.railway.app
+
+REM Start admin panel with Railway backend URL
+start "Luxe Store Admin" cmd /k "cd /d %~dp0admin-app && set VITE_API_URL=https://luxestore-production.up.railway.app && npm run dev"
 
 REM Wait a bit for admin to start
 timeout /t 3 /nobreak >nul
@@ -46,8 +49,11 @@ echo ========================================
 echo.
 echo Admin Panel: http://localhost:3001
 echo.
-echo IMPORTANT: Make sure your backend server is running!
-echo Backend should be at: http://localhost:5000
+echo IMPORTANT: This admin panel connects to Railway backend!
+echo Backend: https://luxestore-production.up.railway.app
+echo.
+echo The admin panel will show orders from the deployed backend.
+echo Orders from https://luxestore-theta.vercel.app will appear here.
 echo.
 echo Opening admin panel in browser...
 timeout /t 2 >nul
