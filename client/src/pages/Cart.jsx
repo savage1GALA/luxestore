@@ -196,7 +196,7 @@ export default function Cart() {
                             <img 
                               src={imageUrl}
                               alt={item.name}
-                              className="w-20 h-20 object-cover rounded-lg transform hover:scale-110 transition-transform"
+                              className="w-20 h-20 object-contain rounded-lg bg-neutral-800 p-1"
                               onError={(e) => {
                                 e.target.style.display = 'none'
                                 e.target.nextSibling.style.display = 'block'

@@ -112,7 +112,7 @@ export default function Products() {
               className="bg-neutral-900 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-white/20 transition-all transform hover:scale-105 border border-white/5 group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center group-hover:scale-110 transition-transform duration-500 relative overflow-hidden">
+              <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 {(() => {
                   const imageUrl = getImageURL(product.image)
@@ -123,7 +123,7 @@ export default function Products() {
                         <img 
                           src={imageUrl}
                           alt={product.name}
-                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300 relative z-10"
+                          className="max-w-full max-h-full object-contain relative z-10"
                           onError={(e) => {
                             e.target.style.display = 'none'
                             e.target.nextSibling.style.display = 'flex'
