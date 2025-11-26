@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Luxury Jewelry Piece 1",
+    "price": 150000,
+    "image": "/images/photo_1_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Exquisite luxury jewelry piece with premium craftsmanship"
+  },
+  {
+    "id": 2,
+    "name": "Luxury Jewelry Piece 2",
+    "price": 200000,
+    "image": "/images/photo_2_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Stunning luxury jewelry piece for special occasions"
+  },
+  {
+    "id": 3,
+    "name": "Luxury Jewelry Piece 3",
+    "price": 180000,
+    "image": "/images/photo_3_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with timeless beauty"
+  },
+  {
+    "id": 4,
+    "name": "Luxury Jewelry Piece 4",
+    "price": 220000,
+    "image": "/images/photo_4_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with elegant design"
+  },
+  {
+    "id": 5,
+    "name": "Luxury Jewelry Piece 5",
+    "price": 250000,
+    "image": "/images/photo_5_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Premium luxury jewelry piece with exquisite details"
+  },
+  {
+    "id": 6,
+    "name": "Luxury Jewelry Piece 6",
+    "price": 190000,
+    "image": "/images/photo_6_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Sophisticated luxury jewelry piece for discerning tastes"
+  },
+  {
+    "id": 7,
+    "name": "Luxury Jewelry Piece 7",
+    "price": 280000,
+    "image": "/images/photo_7_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Luxurious jewelry piece with premium quality materials"
+  },
+  {
+    "id": 8,
+    "name": "Luxury Jewelry Piece 8",
+    "price": 210000,
+    "image": "/images/photo_8_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Charming luxury jewelry piece with delicate craftsmanship"
+  },
+  {
+    "id": 9,
+    "name": "Luxury Jewelry Piece 9",
+    "price": 300000,
+    "image": "/images/photo_9_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Magnificent luxury jewelry piece with stunning design"
+  },
+  {
+    "id": 10,
+    "name": "Luxury Jewelry Piece 10",
+    "price": 170000,
+    "image": "/images/photo_10_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Classic luxury jewelry piece with refined elegance"
+  },
+  {
+    "id": 11,
+    "name": "Luxury Jewelry Piece 11",
+    "price": 240000,
+    "image": "/images/photo_11_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with modern sophistication"
+  },
+  {
+    "id": 12,
+    "name": "Luxury Jewelry Piece 12",
+    "price": 160000,
+    "image": "/images/photo_12_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with artistic flair"
+  },
+  {
+    "id": 13,
+    "name": "Luxury Jewelry Piece 13",
+    "price": 195000,
+    "image": "/images/photo_13_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Refined luxury jewelry piece with exceptional quality"
+  },
+  {
+    "id": 14,
+    "name": "Luxury Jewelry Piece 14",
+    "price": 230000,
+    "image": "/images/photo_14_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Stunning luxury jewelry piece with premium finish"
+  },
+  {
+    "id": 15,
+    "name": "Luxury Jewelry Piece 15",
+    "price": 270000,
+    "image": "/images/photo_15_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Exquisite luxury jewelry piece with masterful design"
+  },
+  {
+    "id": 16,
+    "name": "Luxury Jewelry Piece 16",
+    "price": 320000,
+    "image": "/images/photo_16_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Luxurious jewelry piece with opulent details"
+  },
+  {
+    "id": 17,
+    "name": "Luxury Jewelry Piece 17",
+    "price": 185000,
+    "image": "/images/photo_17_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with timeless appeal"
+  },
+  {
+    "id": 18,
+    "name": "Luxury Jewelry Piece 18",
+    "price": 260000,
+    "image": "/images/photo_18_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Sophisticated luxury jewelry piece with premium materials"
+  },
+  {
+    "id": 19,
+    "name": "Luxury Jewelry Piece 19",
+    "price": 290000,
+    "image": "/images/photo_19_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with intricate design"
+  },
+  {
+    "id": 20,
+    "name": "Luxury Jewelry Piece 20",
+    "price": 205000,
+    "image": "/images/photo_20_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Charming luxury jewelry piece with delicate beauty"
+  },
+  {
+    "id": 21,
+    "name": "Luxury Jewelry Piece 21",
+    "price": 350000,
+    "image": "/images/photo_21_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Magnificent luxury jewelry piece with exceptional craftsmanship"
+  },
+  {
+    "id": 22,
+    "name": "Luxury Jewelry Piece 22",
+    "price": 175000,
+    "image": "/images/photo_22_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Classic luxury jewelry piece with refined elegance"
+  },
+  {
+    "id": 23,
+    "name": "Luxury Jewelry Piece 23",
+    "price": 310000,
+    "image": "/images/photo_23_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Premium luxury jewelry piece with stunning details"
+  },
+  {
+    "id": 24,
+    "name": "Luxury Jewelry Piece 24",
+    "price": 225000,
+    "image": "/images/photo_24_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with modern sophistication"
+  },
+  {
+    "id": 25,
+    "name": "Luxury Jewelry Piece 25",
+    "price": 265000,
+    "image": "/images/photo_25_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with artistic excellence"
+  },
+  {
+    "id": 26,
+    "name": "Luxury Jewelry Piece 26",
+    "price": 400000,
+    "image": "/images/photo_26_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Opulent luxury jewelry piece with masterful artistry"
+  },
+  {
+    "id": 27,
+    "name": "Luxury Jewelry Piece 27",
+    "price": 180000,
+    "image": "/images/photo_27_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Refined luxury jewelry piece with exceptional quality"
+  },
+  {
+    "id": 28,
+    "name": "Luxury Jewelry Piece 28",
+    "price": 245000,
+    "image": "/images/photo_28_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Stunning luxury jewelry piece with premium finish"
+  },
+  {
+    "id": 29,
+    "name": "Luxury Jewelry Piece 29",
+    "price": 165000,
+    "image": "/images/photo_29_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with timeless beauty"
+  },
+  {
+    "id": 30,
+    "name": "Luxury Jewelry Piece 30",
+    "price": 275000,
+    "image": "/images/photo_30_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Exquisite luxury jewelry piece with sophisticated design"
+  },
+  {
+    "id": 31,
+    "name": "Luxury Jewelry Piece 31",
+    "price": 215000,
+    "image": "/images/photo_31_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with elegant craftsmanship"
+  },
+  {
+    "id": 32,
+    "name": "Luxury Jewelry Piece 32",
+    "price": 155000,
+    "image": "/images/photo_32_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Charming luxury jewelry piece with delicate details"
+  },
+  {
+    "id": 33,
+    "name": "Luxury Jewelry Piece 33",
+    "price": 330000,
+    "image": "/images/photo_33_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Magnificent luxury jewelry piece with premium materials"
+  },
+  {
+    "id": 34,
+    "name": "Luxury Jewelry Piece 34",
+    "price": 255000,
+    "image": "/images/photo_34_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Sophisticated luxury jewelry piece with exceptional design"
+  },
+  {
+    "id": 35,
+    "name": "Luxury Jewelry Piece 35",
+    "price": 380000,
+    "image": "/images/photo_35_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Luxurious jewelry piece with opulent craftsmanship"
+  },
+  {
+    "id": 36,
+    "name": "Luxury Jewelry Piece 36",
+    "price": 200000,
+    "image": "/images/photo_36_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with refined beauty"
+  },
+  {
+    "id": 37,
+    "name": "Luxury Jewelry Piece 37",
+    "price": 285000,
+    "image": "/images/photo_37_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with intricate details"
+  },
+  {
+    "id": 38,
+    "name": "Luxury Jewelry Piece 38",
+    "price": 420000,
+    "image": "/images/photo_38_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Opulent luxury jewelry piece with masterful artistry"
+  },
+  {
+    "id": 39,
+    "name": "Luxury Jewelry Piece 39",
+    "price": 235000,
+    "image": "/images/photo_39_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Stunning luxury jewelry piece with premium quality"
+  },
+  {
+    "id": 40,
+    "name": "Luxury Jewelry Piece 40",
+    "price": 295000,
+    "image": "/images/photo_40_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Exquisite luxury jewelry piece with sophisticated elegance"
+  },
+  {
+    "id": 41,
+    "name": "Luxury Jewelry Piece 41",
+    "price": 210000,
+    "image": "/images/photo_41_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with timeless appeal"
+  },
+  {
+    "id": 42,
+    "name": "Luxury Jewelry Piece 42",
+    "price": 360000,
+    "image": "/images/photo_42_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Magnificent luxury jewelry piece with exceptional craftsmanship"
+  },
+  {
+    "id": 43,
+    "name": "Luxury Jewelry Piece 43",
+    "price": 450000,
+    "image": "/images/photo_43_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Opulent luxury jewelry piece with premium materials"
+  },
+  {
+    "id": 44,
+    "name": "Luxury Jewelry Piece 44",
+    "price": 240000,
+    "image": "/images/photo_44_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Beautiful luxury jewelry piece with artistic excellence"
+  },
+  {
+    "id": 45,
+    "name": "Luxury Jewelry Piece 45",
+    "price": 305000,
+    "image": "/images/photo_45_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Sophisticated luxury jewelry piece with refined details"
+  },
+  {
+    "id": 46,
+    "name": "Luxury Jewelry Piece 46",
+    "price": 270000,
+    "image": "/images/photo_46_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Elegant luxury jewelry piece with modern sophistication"
+  },
+  {
+    "id": 47,
+    "name": "Luxury Jewelry Piece 47",
+    "price": 325000,
+    "image": "/images/photo_47_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Stunning luxury jewelry piece with premium finish"
+  },
+  {
+    "id": 48,
+    "name": "Luxury Jewelry Piece 48",
+    "price": 190000,
+    "image": "/images/photo_48_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Classic luxury jewelry piece with refined elegance"
+  },
+  {
+    "id": 49,
+    "name": "Luxury Jewelry Piece 49",
+    "price": 260000,
+    "image": "/images/photo_49_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Charming luxury jewelry piece with delicate beauty"
+  },
+  {
+    "id": 50,
+    "name": "Luxury Jewelry Piece 50",
+    "price": 340000,
+    "image": "/images/photo_50_2025-11-26_19-35-04.jpg",
+    "category": "Jewelry",
+    "description": "Exquisite luxury jewelry piece with masterful design"
+  }
+]
