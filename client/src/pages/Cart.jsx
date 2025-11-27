@@ -6,8 +6,14 @@ import { getImageURL } from '../config/api'
 
 // Update this list to add more cities or adjust their shipping fees.
 const SHIPPING_OPTIONS = [
-  { id: 'slemani', label: 'Slemani', fee: 3500 },
-  { id: 'hawler', label: 'Hawler', fee: 4000 },
+  { id: 'slemani', label: 'Slemani', fee: 3000 },
+  { id: 'hawler', label: 'Hawler', fee: 4250 },
+  { id: 'karkuk', label: 'Karkuk', fee: 4250 },
+  { id: 'dhok', label: 'Dhok', fee: 4250 },
+  { id: 'outside slemani', label: 'Outside Slemani', fee: 4500 },
+  { id: 'other', label: 'Other', fee: 4500 },
+  { id: 'baghdad', label: 'Baghdad', fee: 5000 },
+  { id: 'outside baghdad', label: 'Outside Baghdad', fee: 7000 },
 ]
 
 export default function Cart() {
