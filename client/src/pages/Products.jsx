@@ -195,8 +195,7 @@ export default function Products() {
                                 alt={product.name}
                                 className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
                                 style={{
-                                  mixBlendMode: 'multiply',
-                                  filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                  filter: 'brightness(1.1) contrast(1.05)',
                                   backgroundColor: 'transparent'
                                 }}
                                 onError={(e) => {
@@ -298,8 +297,7 @@ export default function Products() {
                                 alt={product.name}
                                 className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
                                 style={{
-                                  mixBlendMode: 'multiply',
-                                  filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                  filter: 'brightness(1.1) contrast(1.05)',
                                   backgroundColor: 'transparent'
                                 }}
                                 onError={(e) => {

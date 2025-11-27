@@ -204,8 +204,7 @@ export default function Cart() {
                               alt={item.name}
                               className="w-20 h-20 object-contain rounded-lg bg-neutral-800 p-1"
                               style={{
-                                mixBlendMode: 'multiply',
-                                filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                filter: 'brightness(1.1) contrast(1.05)',
                                 backgroundColor: 'transparent'
                               }}
                               onError={(e) => {
