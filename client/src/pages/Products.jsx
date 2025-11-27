@@ -194,10 +194,6 @@ export default function Products() {
                                 src={imageUrl}
                                 alt={product.name}
                                 className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
-                                style={{
-                                  filter: 'brightness(1.1) contrast(1.05)',
-                                  backgroundColor: 'transparent'
-                                }}
                                 onError={(e) => {
                                   e.target.style.display = 'none'
                                   e.target.nextSibling.style.display = 'flex'
@@ -296,10 +292,6 @@ export default function Products() {
                                 src={imageUrl}
                                 alt={product.name}
                                 className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
-                                style={{
-                                  filter: 'brightness(1.1) contrast(1.05)',
-                                  backgroundColor: 'transparent'
-                                }}
                                 onError={(e) => {
                                   e.target.style.display = 'none'
                                   e.target.nextSibling.style.display = 'flex'
