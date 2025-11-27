@@ -10,6 +10,7 @@ export default function Products() {
   const { addToCart } = useCart()
   const [searchParams] = useSearchParams()
   const selectedCategory = searchParams.get('category')
+  const [imageViews, setImageViews] = useState({}) // Track front/back view for each product
 
   useEffect(() => {
     fetchProducts()
@@ -180,15 +181,24 @@ export default function Products() {
                     <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
                       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       {(() => {
-                        const imageUrl = getImageURL(product.image)
+                        const showBack = imageViews[product.id] === 'back' && product.imageBack
+                        const currentImage = showBack ? product.imageBack : product.image
+                        const imageUrl = getImageURL(currentImage)
                         const hasImage = imageUrl !== null
+                        const hasBackImage = product.imageBack && getImageURL(product.imageBack) !== null
                         return (
                           <>
                             {hasImage && (
                               <img 
+                                key={currentImage}
                                 src={imageUrl}
                                 alt={product.name}
-                                className="max-w-full max-h-full object-contain relative z-10"
+                                className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
+                                style={{
+                                  mixBlendMode: 'multiply',
+                                  filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                  backgroundColor: 'transparent'
+                                }}
                                 onError={(e) => {
                                   e.target.style.display = 'none'
                                   e.target.nextSibling.style.display = 'flex'
@@ -200,6 +210,21 @@ export default function Products() {
                             >
                               {product.image || '💎'}
                             </span>
+                            {hasBackImage && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  setImageViews(prev => ({
+                                    ...prev,
+                                    [product.id]: prev[product.id] === 'back' ? 'front' : 'back'
+                                  }))
+                                }}
+                                className="absolute bottom-2 right-2 bg-white/90 hover:bg-white text-black px-3 py-1.5 rounded-lg text-xs font-semibold z-20 transition-all transform hover:scale-105 shadow-lg"
+                                title={showBack ? "Show Front" : "Show Back"}
+                              >
+                                {showBack ? "Front" : "Back"}
+                              </button>
+                            )}
                           </>
                         )
                       })()}
@@ -259,15 +284,24 @@ export default function Products() {
                     <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
                       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       {(() => {
-                        const imageUrl = getImageURL(product.image)
+                        const showBack = imageViews[product.id] === 'back' && product.imageBack
+                        const currentImage = showBack ? product.imageBack : product.image
+                        const imageUrl = getImageURL(currentImage)
                         const hasImage = imageUrl !== null
+                        const hasBackImage = product.imageBack && getImageURL(product.imageBack) !== null
                         return (
                           <>
                             {hasImage && (
                               <img 
+                                key={currentImage}
                                 src={imageUrl}
                                 alt={product.name}
-                                className="max-w-full max-h-full object-contain relative z-10"
+                                className="max-w-full max-h-full object-contain relative z-10 transition-opacity duration-300"
+                                style={{
+                                  mixBlendMode: 'multiply',
+                                  filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                  backgroundColor: 'transparent'
+                                }}
                                 onError={(e) => {
                                   e.target.style.display = 'none'
                                   e.target.nextSibling.style.display = 'flex'
@@ -279,6 +313,21 @@ export default function Products() {
                             >
                               {product.image || '💎'}
                             </span>
+                            {hasBackImage && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  setImageViews(prev => ({
+                                    ...prev,
+                                    [product.id]: prev[product.id] === 'back' ? 'front' : 'back'
+                                  }))
+                                }}
+                                className="absolute bottom-2 right-2 bg-white/90 hover:bg-white text-black px-3 py-1.5 rounded-lg text-xs font-semibold z-20 transition-all transform hover:scale-105 shadow-lg"
+                                title={showBack ? "Show Front" : "Show Back"}
+                              >
+                                {showBack ? "Front" : "Back"}
+                              </button>
+                            )}
                           </>
                         )
                       })()}

@@ -203,6 +203,11 @@ export default function Cart() {
                               src={imageUrl}
                               alt={item.name}
                               className="w-20 h-20 object-contain rounded-lg bg-neutral-800 p-1"
+                              style={{
+                                mixBlendMode: 'multiply',
+                                filter: 'contrast(1.15) brightness(1.08) saturate(1.1)',
+                                backgroundColor: 'transparent'
+                              }}
                               onError={(e) => {
                                 e.target.style.display = 'none'
                                 e.target.nextSibling.style.display = 'block'
