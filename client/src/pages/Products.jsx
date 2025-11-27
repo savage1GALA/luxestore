@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useSearchParams, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import apiClient from '../config/axios'
 import { getImageURL } from '../config/api'
@@ -7,10 +8,24 @@ export default function Products() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const { addToCart } = useCart()
+  const [searchParams] = useSearchParams()
+  const selectedCategory = searchParams.get('category')
 
   useEffect(() => {
     fetchProducts()
   }, [])
+
+  // Scroll to selected category when category filter is applied
+  useEffect(() => {
+    if (selectedCategory) {
+      setTimeout(() => {
+        const element = document.getElementById(`category-${selectedCategory}`)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    }
+  }, [selectedCategory, products])
 
   const fetchProducts = async () => {
     try {
@@ -101,6 +116,11 @@ export default function Products() {
     'Necklaces': '✨'
   }
 
+  // Filter categories if a category is selected
+  const categoriesToShow = selectedCategory 
+    ? categoryOrder.filter(cat => cat === selectedCategory)
+    : categoryOrder
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-950 text-white">
@@ -117,20 +137,30 @@ export default function Products() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Products
+            {selectedCategory ? `${selectedCategory}` : 'Our Products'}
           </h1>
           <p className="text-xl text-gray-400">
-            Discover our exquisite collection of premium items
+            {selectedCategory 
+              ? `Discover our ${selectedCategory.toLowerCase()} collection`
+              : 'Discover our exquisite collection of premium items'}
           </p>
+          {selectedCategory && (
+            <Link
+              to="/products"
+              className="inline-block mt-4 text-white/70 hover:text-white underline text-sm"
+            >
+              View All Products
+            </Link>
+          )}
         </div>
 
         {/* Render products grouped by category */}
-        {categoryOrder.map((category) => {
+        {categoriesToShow.map((category) => {
           const categoryProducts = productsByCategory[category] || []
           if (categoryProducts.length === 0) return null
 
           return (
-            <div key={category} className="mb-16">
+            <div key={category} id={`category-${category}`} className="mb-16">
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-4xl">{categoryIcons[category] || '💎'}</span>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">

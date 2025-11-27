@@ -95,13 +95,13 @@ export default function Home() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-6 transform translate-y-0 group-hover:-translate-y-2 transition-transform">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  Bracelets
+                  Rings
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Elegant bracelets for every occasion
+                  Elegant rings for every occasion
                 </p>
                 <Link
-                  to="/products"
+                  to="/products?category=Rings"
                   className="inline-flex items-center text-white font-semibold hover:text-gray-300 group-hover:gap-2 transition-all"
                 >
                   Shop Now <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
             <div className="relative group overflow-hidden rounded-3xl shadow-2xl hover:shadow-white/20 transition-all transform hover:scale-110 duration-300">
               <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <span className="text-8xl transform group-hover:rotate-12 transition-transform duration-300">📿</span>
+                <span className="text-8xl transform group-hover:rotate-12 transition-transform duration-300">✨</span>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-6 transform translate-y-0 group-hover:-translate-y-2 transition-transform">
                 <h3 className="text-2xl font-bold text-white mb-2">
@@ -120,7 +120,7 @@ export default function Home() {
                   Stunning necklaces to complete your look
                 </p>
                 <Link
-                  to="/products"
+                  to="/products?category=Necklaces"
                   className="inline-flex items-center text-white font-semibold hover:text-gray-300 group-hover:gap-2 transition-all"
                 >
                   Shop Now <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
@@ -129,17 +129,17 @@ export default function Home() {
             </div>
             <div className="relative group overflow-hidden rounded-3xl shadow-2xl hover:shadow-white/20 transition-all transform hover:scale-110 duration-300">
               <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <span className="text-8xl transform group-hover:rotate-12 transition-transform duration-300">💎</span>
+                <span className="text-8xl transform group-hover:rotate-12 transition-transform duration-300">👕</span>
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-6 transform translate-y-0 group-hover:-translate-y-2 transition-transform">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  More Jewelry
+                  Clothing
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  Discover our full collection
+                  Premium clothing and apparel
                 </p>
                 <Link
-                  to="/products"
+                  to="/products?category=Clothing"
                   className="inline-flex items-center text-white font-semibold hover:text-gray-300 group-hover:gap-2 transition-all"
                 >
                   Shop Now <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
