@@ -82,6 +82,25 @@ export default function Products() {
     }).format(price)
   }
 
+  // Group products by category
+  const productsByCategory = products.reduce((acc, product) => {
+    const category = product.category || 'Other'
+    if (!acc[category]) {
+      acc[category] = []
+    }
+    acc[category].push(product)
+    return acc
+  }, {})
+
+  // Define category order and icons
+  const categoryOrder = ['Clothing', 'Rings', 'Bracelets', 'Necklaces']
+  const categoryIcons = {
+    'Clothing': '👕',
+    'Rings': '💍',
+    'Bracelets': '📿',
+    'Necklaces': '✨'
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-neutral-950 text-white">
@@ -101,69 +120,167 @@ export default function Products() {
             Our Products
           </h1>
           <p className="text-xl text-gray-400">
-            Discover our exquisite collection of premium jewelry
+            Discover our exquisite collection of premium items
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div
-              key={product.id}
-              className="bg-neutral-900 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-white/20 transition-all transform hover:scale-105 border border-white/5 group"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                {(() => {
-                  const imageUrl = getImageURL(product.image)
-                  const hasImage = imageUrl !== null
-                  return (
-                    <>
-                      {hasImage && (
-                        <img 
-                          src={imageUrl}
-                          alt={product.name}
-                          className="max-w-full max-h-full object-contain relative z-10"
-                          onError={(e) => {
-                            e.target.style.display = 'none'
-                            e.target.nextSibling.style.display = 'flex'
-                          }}
-                        />
-                      )}
-                      <span 
-                        className={`text-9xl transform group-hover:rotate-12 transition-transform duration-300 relative z-10 ${hasImage ? 'hidden' : ''}`}
-                      >
-                        {product.image || '💎'}
-                      </span>
-                    </>
-                  )
-                })()}
+        {/* Render products grouped by category */}
+        {categoryOrder.map((category) => {
+          const categoryProducts = productsByCategory[category] || []
+          if (categoryProducts.length === 0) return null
+
+          return (
+            <div key={category} className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-4xl">{categoryIcons[category] || '💎'}</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                  {category}
+                </h2>
+                <span className="text-gray-400 text-lg">
+                  ({categoryProducts.length} {categoryProducts.length === 1 ? 'item' : 'items'})
+                </span>
               </div>
-              <div className="p-6">
-                <div className="mb-2">
-                  <span className="inline-block px-3 py-1 text-xs text-black font-semibold bg-white rounded-full">
-                    {product.category}
-                  </span>
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {product.name}
-                </h3>
-                <p className="text-gray-300 mb-4 leading-relaxed">{product.description}</p>
-                <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                  <span className="text-2xl font-bold text-white">
-                    {formatPrice(product.price)}
-                  </span>
-                  <button
-                    onClick={() => addToCart(product)}
-                    className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg hover:shadow-white/30"
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {categoryProducts.map((product, index) => (
+                  <div
+                    key={product.id}
+                    className="bg-neutral-900 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-white/20 transition-all transform hover:scale-105 border border-white/5 group"
+                    style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    Add to Cart 🛒
-                  </button>
-                </div>
+                    <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      {(() => {
+                        const imageUrl = getImageURL(product.image)
+                        const hasImage = imageUrl !== null
+                        return (
+                          <>
+                            {hasImage && (
+                              <img 
+                                src={imageUrl}
+                                alt={product.name}
+                                className="max-w-full max-h-full object-contain relative z-10"
+                                onError={(e) => {
+                                  e.target.style.display = 'none'
+                                  e.target.nextSibling.style.display = 'flex'
+                                }}
+                              />
+                            )}
+                            <span 
+                              className={`text-9xl transform group-hover:rotate-12 transition-transform duration-300 relative z-10 ${hasImage ? 'hidden' : ''}`}
+                            >
+                              {product.image || '💎'}
+                            </span>
+                          </>
+                        )
+                      })()}
+                    </div>
+                    <div className="p-6">
+                      <div className="mb-2">
+                        <span className="inline-block px-3 py-1 text-xs text-black font-semibold bg-white rounded-full">
+                          {product.category}
+                        </span>
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {product.name}
+                      </h3>
+                      <p className="text-gray-300 mb-4 leading-relaxed">{product.description}</p>
+                      <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                        <span className="text-2xl font-bold text-white">
+                          {formatPrice(product.price)}
+                        </span>
+                        <button
+                          onClick={() => addToCart(product)}
+                          className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg hover:shadow-white/30"
+                        >
+                          Add to Cart 🛒
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          )
+        })}
+
+        {/* Render any other categories not in the predefined order */}
+        {Object.keys(productsByCategory).filter(cat => !categoryOrder.includes(cat)).map((category) => {
+          const categoryProducts = productsByCategory[category] || []
+          if (categoryProducts.length === 0) return null
+
+          return (
+            <div key={category} className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-4xl">💎</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                  {category}
+                </h2>
+                <span className="text-gray-400 text-lg">
+                  ({categoryProducts.length} {categoryProducts.length === 1 ? 'item' : 'items'})
+                </span>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {categoryProducts.map((product, index) => (
+                  <div
+                    key={product.id}
+                    className="bg-neutral-900 text-white rounded-3xl shadow-xl overflow-hidden hover:shadow-white/20 transition-all transform hover:scale-105 border border-white/5 group"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="bg-gradient-to-br from-neutral-800 via-neutral-900 to-black h-72 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      {(() => {
+                        const imageUrl = getImageURL(product.image)
+                        const hasImage = imageUrl !== null
+                        return (
+                          <>
+                            {hasImage && (
+                              <img 
+                                src={imageUrl}
+                                alt={product.name}
+                                className="max-w-full max-h-full object-contain relative z-10"
+                                onError={(e) => {
+                                  e.target.style.display = 'none'
+                                  e.target.nextSibling.style.display = 'flex'
+                                }}
+                              />
+                            )}
+                            <span 
+                              className={`text-9xl transform group-hover:rotate-12 transition-transform duration-300 relative z-10 ${hasImage ? 'hidden' : ''}`}
+                            >
+                              {product.image || '💎'}
+                            </span>
+                          </>
+                        )
+                      })()}
+                    </div>
+                    <div className="p-6">
+                      <div className="mb-2">
+                        <span className="inline-block px-3 py-1 text-xs text-black font-semibold bg-white rounded-full">
+                          {product.category}
+                        </span>
+                      </div>
+                      <h3 className="text-2xl font-bold text-white mb-2">
+                        {product.name}
+                      </h3>
+                      <p className="text-gray-300 mb-4 leading-relaxed">{product.description}</p>
+                      <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                        <span className="text-2xl font-bold text-white">
+                          {formatPrice(product.price)}
+                        </span>
+                        <button
+                          onClick={() => addToCart(product)}
+                          className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg hover:shadow-white/30"
+                        >
+                          Add to Cart 🛒
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
