@@ -3,8 +3,8 @@
     "id": 1,
     "name": "Graphic Hoodie",
     "price": 175000,
-    "image": "/images/photo_1_2025-11-26_19-35-04.jpg",
-    "imageBack": "/images/photo_2_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_1_2025-11-26_19-35-04.png",
+    "imageBack": "/images/photo_2_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Exquisite luxury clothing with premium craftsmanship"
   },
@@ -12,8 +12,8 @@
     "id": 2,
     "name": "8 Ball Hoodie",
     "price": 235000,
-    "image": "/images/photo_5_2025-11-26_19-35-04.jpg",
-    "imageBack": "/images/photo_4_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_5_2025-11-26_19-35-04.png",
+    "imageBack": "/images/photo_4_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Premium luxury clothing with exquisite details"
   },
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Graphic Hoddie",
     "price": 190000,
-    "image": "/images/photo_6_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_6_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Sophisticated luxury clothing for discerning tastes"
   },
@@ -29,8 +29,8 @@
     "id": 4,
     "name": "Graphic Hoodie",
     "price": 255000,
-    "image": "/images/photo_8_2025-11-26_19-35-04.jpg",
-    "imageBack": "/images/photo_9_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_8_2025-11-26_19-35-04.png",
+    "imageBack": "/images/photo_9_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Charming luxury clothing with delicate craftsmanship"
   },
@@ -38,7 +38,7 @@
     "id": 5,
     "name": "Polo Sweatpants",
     "price": 170000,
-    "image": "/images/photo_10_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_10_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Classic luxury clothing with refined elegance"
   },
@@ -46,7 +46,7 @@
     "id": 6,
     "name": "Polo Sweatpants",
     "price": 160000,
-    "image": "/images/photo_12_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_12_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Beautiful luxury clothing with artistic flair"
   },
@@ -54,7 +54,7 @@
     "id": 7,
     "name": "Polo Sweatpants",
     "price": 230000,
-    "image": "/images/photo_14_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_14_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Stunning luxury clothing with premium finish"
   },
@@ -62,7 +62,7 @@
     "id": 8,
     "name": "Old Money Women Cardigan",
     "price": 270000,
-    "image": "/images/photo_15_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_15_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Exquisite luxury jewelry piece with masterful design"
   },
@@ -70,7 +70,7 @@
     "id": 9,
     "name": "Hooded Jacket",
     "price": 320000,
-    "image": "/images/photo_16_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_16_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Luxurious clothing with opulent details"
   },
@@ -78,7 +78,7 @@
     "id": 10,
     "name": "Hooded Jacket",
     "price": 185000,
-    "image": "/images/photo_17_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_17_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Elegant luxury clothing with timeless appeal"
   },
@@ -86,7 +86,7 @@
     "id": 11,
     "name": "Old Money Women Cardigan",
     "price": 260000,
-    "image": "/images/photo_18_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_18_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Sophisticated luxury clothing with premium materials"
   },
@@ -94,7 +94,7 @@
     "id": 12,
     "name": "Old Money Women Cardigan",
     "price": 290000,
-    "image": "/images/photo_19_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_19_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Beautiful luxury clothing with intricate design"
   },
@@ -102,7 +102,7 @@
     "id": 13,
     "name": "Hooded Jacket",
     "price": 205000,
-    "image": "/images/photo_20_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_20_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Charming luxury clothing with delicate beauty"
   },
@@ -110,7 +110,7 @@
     "id": 14,
     "name": "Hooded Jacket",
     "price": 350000,
-    "image": "/images/photo_21_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_21_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Magnificent luxury clothing with exceptional craftsmanship"
   },
@@ -118,7 +118,7 @@
     "id": 15,
     "name": "Old Money Women Cardigan",
     "price": 175000,
-    "image": "/images/photo_22_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_22_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Classic luxury clothing with refined elegance"
   },
@@ -126,7 +126,7 @@
     "id": 16,
     "name": "Old Money Women Cardigan",
     "price": 310000,
-    "image": "/images/photo_23_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_23_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Premium luxury clothing with stunning details"
   },
@@ -134,7 +134,7 @@
     "id": 17,
     "name": "Old Money Women Cardigan",
     "price": 225000,
-    "image": "/images/photo_24_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_24_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Elegant luxury clothing with modern sophistication"
   },
@@ -142,7 +142,7 @@
     "id": 18,
     "name": "Hooded Jacket",
     "price": 265000,
-    "image": "/images/photo_25_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_25_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Beautiful luxury clothing with artistic excellence"
   },
@@ -150,7 +150,7 @@
     "id": 19,
     "name": "Hooded Jacket",
     "price": 400000,
-    "image": "/images/photo_26_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_26_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Opulent luxury clothing with masterful artistry"
   },
@@ -158,7 +158,7 @@
     "id": 20,
     "name": "MF DOOM RINGS",
     "price": 7500,
-    "image": "/images/photo_27_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_27_2025-11-26_19-35-04.png",
     "category": "Rings",
     "description": "Refined luxury ring with exceptional quality"
   },
@@ -166,7 +166,7 @@
     "id": 21,
     "name": "Old Money Striped Shirts",
     "price": 35000,
-    "image": "/images/photo_28_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_28_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Stunning luxury clothing with premium finish"
   },
@@ -174,7 +174,7 @@
     "id": 22,
     "name": "Old Money Striped Shirts",
     "price": 35000,
-    "image": "/images/photo_29_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_29_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Elegant luxury clothing with timeless beauty"
   },
@@ -182,7 +182,7 @@
     "id": 23,
     "name": "Old Money Striped Shirts",
     "price": 35000,
-    "image": "/images/photo_30_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_30_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Exquisite luxury jewelry piece with sophisticated design"
   },
@@ -190,7 +190,7 @@
     "id": 24,
     "name": "Old Money Striped Shirts",
     "price": 35000,
-    "image": "/images/photo_31_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_31_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Beautiful luxury clothing with elegant craftsmanship"
   },
@@ -198,7 +198,7 @@
     "id": 25,
     "name": "Old Money Striped Shirts",
     "price": 35000,
-    "image": "/images/photo_32_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_32_2025-11-26_19-35-04.png",
     "category": "Clothing",
     "description": "Charming luxury clothing with delicate details"
   },
@@ -206,7 +206,7 @@
     "id": 26,
     "name": "XXXtentacion Bracelet",
     "price": 330000,
-    "image": "/images/photo_33_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_33_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Magnificent luxury bracelet with premium materials"
   },
@@ -214,7 +214,7 @@
     "id": 27,
     "name": "Chrome Bracelet",
     "price": 255000,
-    "image": "/images/photo_34_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_34_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Sophisticated luxury bracelet with exceptional design"
   },
@@ -222,7 +222,7 @@
     "id": 28,
     "name": "Juice Wrld Necklace",
     "price": 10000,
-    "image": "/images/photo_35_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_35_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Luxurious necklace with opulent craftsmanship"
   },
@@ -230,7 +230,7 @@
     "id": 29,
     "name": "Travis Scott Jack Necklace",
     "price": 200000,
-    "image": "/images/photo_36_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_36_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Elegant luxury necklace with refined beauty"
   },
@@ -238,7 +238,7 @@
     "id": 30,
     "name": "Heart and sword matching necklace gold",
     "price": 285000,
-    "image": "/images/photo_37_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_37_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Beautiful luxury necklace with intricate details"
   },
@@ -246,7 +246,7 @@
     "id": 31,
     "name": "Heart and sword matching necklace silver",
     "price": 420000,
-    "image": "/images/photo_38_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_38_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Opulent luxury necklace with masterful artistry"
   },
@@ -254,7 +254,7 @@
     "id": 32,
     "name": "Womens Elegant Bracelet",
     "price": 235000,
-    "image": "/images/photo_39_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_39_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Stunning luxury bracelet with premium quality"
   },
@@ -262,7 +262,7 @@
     "id": 33,
     "name": "Womens Elegant Bracelet",
     "price": 295000,
-    "image": "/images/photo_40_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_40_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Exquisite luxury bracelet with sophisticated elegance"
   },
@@ -270,7 +270,7 @@
     "id": 34,
     "name": "Womens Elegant Bracelet",
     "price": 210000,
-    "image": "/images/photo_41_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_41_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Elegant luxury bracelet with timeless appeal"
   },
@@ -278,7 +278,7 @@
     "id": 35,
     "name": "Womens Elegant Bracelet",
     "price": 360000,
-    "image": "/images/photo_42_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_42_2025-11-26_19-35-04.png",
     "category": "Bracelets",
     "description": "Magnificent luxury bracelet with exceptional craftsmanship"
   },
@@ -286,7 +286,7 @@
     "id": 36,
     "name": "Billie Eilish necklace",
     "price": 12000,
-    "image": "/images/photo_44_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_44_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Beautiful luxury necklace with artistic excellence"
   },
@@ -294,7 +294,7 @@
     "id": 37,
     "name": "Billie Eilish necklace",
     "price": 12000,
-    "image": "/images/photo_45_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_45_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Sophisticated luxury necklace with refined details"
   },
@@ -302,7 +302,7 @@
     "id": 38,
     "name": "The Weeknd Xo necklace",
     "price": 270000,
-    "image": "/images/photo_46_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_46_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Elegant luxury necklace with modern sophistication"
   },
@@ -310,7 +310,7 @@
     "id": 39,
     "name": "Juice Wrld Necklace",
     "price": 325000,
-    "image": "/images/photo_47_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_47_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Stunning luxury necklace with premium finish"
   },
@@ -318,7 +318,7 @@
     "id": 40,
     "name": "XXXtentacion Necklace Gold",
     "price": 190000,
-    "image": "/images/photo_48_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_48_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Classic luxury necklace with refined elegance"
   },
@@ -326,7 +326,7 @@
     "id": 41,
     "name": "XXXtentacion Necklace Silver",
     "price": 260000,
-    "image": "/images/photo_49_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_49_2025-11-26_19-35-04.png",
     "category": "Necklaces",
     "description": "Charming luxury necklace with delicate beauty"
   },
@@ -334,7 +334,7 @@
     "id": 42,
     "name": "Kendrick Lamar ring",
     "price": 7500,
-    "image": "/images/photo_50_2025-11-26_19-35-04.jpg",
+    "image": "/images/photo_50_2025-11-26_19-35-04.png",
     "category": "Rings",
     "description": "Exquisite luxury ring with masterful design"
   }
